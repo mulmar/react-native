@@ -10,6 +10,7 @@ const ImageDetail = (props) => {
     </View>)
 };
 
+
 const styles = StyleSheet.create({
   text: {
     fontSize: 20,
