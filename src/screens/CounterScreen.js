@@ -1,24 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { Text, StyleSheet, View, Button } from "react-native";
 
 const CounterScreen = ({navigation}) => {
     const myName = "Martin";
-    let teller = 0;
+    const [counter, setCounter] = useState(0);
     return (
     <View>
       <Button 
         onPress={() => {
-          teller++}}
+          setCounter(counter + 1)}}
         title="Increase" />
      <Button 
         onPress={() => {
-          teller--}}
+          setCounter(counter - 1)}}
         title="Decrease" />
-        <Text style={styles.textStyle}>Counter value:{teller}</Text>
+        <Text style={styles.textStyle}>Counter value:{counter}</Text>
      </View>
     );
   };
   
+
   const styles = StyleSheet.create({
     textStyle: {
       fontSize: 40
