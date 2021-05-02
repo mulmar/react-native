@@ -6,7 +6,7 @@ npm-debug.*
 *.p12
 *.key
 *.mobileprovision
-*.orig.*
+*.orig.*git a
 web-build/
 food/keys/*
 
